@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="./static/mywebscript.js" defer></script>
+    <style>
+        .center-heading {
+            text-align: center;
+        }
+        #system_response {
+            padding: 25px;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1 class="center-heading">Basic Mathematical Application</h1> 
+        <div style="padding: 25px;">
+            <div class="card-body">
+                <div class="mb-3">
+                    <label class="form-label">Number 1</label>
+                    <input type="number" class="form-control" id="num1">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Number 2</label>
+                    <input type="number" class="form-control" id="num2">
+                </div>
+                <div style="padding: 25px; text-align: center;">
+                    <button id="btnAdd" class="btn btn-secondary">Add</button>
+                    <button id="btnSub" class="btn btn-secondary">Subtract</button>
+                    <button id="btnMul" class="btn btn-secondary">Multiply</button>
+                </div>
+                <h1 class="center-heading">Response from server</h1> 
+                <div id="system_response" class="text-center"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
